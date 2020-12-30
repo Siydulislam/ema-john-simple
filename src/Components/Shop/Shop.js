@@ -9,6 +9,8 @@ import Cart from '../Cart/Cart';
 import fakeData from '../../fakeData';
 
 import {addToDatabaseCart, getDatabaseCart} from '../../utilities/databaseManager';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 class Shop extends Component {
     constructor() {
@@ -73,6 +75,7 @@ class Shop extends Component {
                 <div className="search-container">
                     <input type="text" className="search-input" onKeyUp={this.handleSearch} placeholder="type here to search" />
                     <Link to="/review">
+                        <FontAwesomeIcon icon={faShoppingCart} style={{color: "white", marginLeft: "5px", fontSize: "25px"}} />
                         <span className="cart-count">{this.state.cart.length}</span>
                     </Link>
                 </div>
