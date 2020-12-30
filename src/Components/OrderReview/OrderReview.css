@@ -1,0 +1,10 @@
+.review-container{
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.item-container{
+    width: 50%;
+    margin-left: 200px;
+    border-right: 1px solid lightgray;
+}
